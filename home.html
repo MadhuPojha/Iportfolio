@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <title>My-Portfolio</title>
+        <link type="text/css" rel="stylesheet" href="index.css">
+        <script src="index.js"></script>
+    </head>
+    <body class="container">
+        <header class="body">
+            <ul class="ul" id="navigation">
+                <li class="li">
+                    <a href="C:\Users\mpriy\Documents\MadhuPojha\Lexicon\Portfolio\home.html" class="a"> Home </a>
+                    <a href="C:\Users\mpriy\Documents\MadhuPojha\Lexicon\Portfolio\about.html" class="a"> About </a>
+                    <a href="C:\Users\mpriy\Documents\MadhuPojha\Lexicon\Portfolio\projects.html" class="a"> Projects </a>
+                    <a href="C:\Users\mpriy\Documents\MadhuPojha\Lexicon\Portfolio\contact.html" class="a"> Contact </a>
+                    <a href="#" onclick="toggleDarkMode()" class="a" > Dark Mode</a>
+                    <!-- <a href="#" class="a"> Skill </a>                     
+                    <a href="#" class="a"> Resume </a> -->
+                </li>
+            </ul>
+        </header>
+            
+            <script>
+                function toggleDarkMode() {
+                    document.body.classList.toggle('dark-mode');
+                    // Send an AJAX request to update the server-side session
+                    fetch("/toggle_dark_mode", {
+                        method: "POST",
+                        credentials: "include", // Include cookies in the request
+                    });
+                }
+            </script>
+
+        <main class="main main--about">
+            <h1 class="h1">Hi, I am Madhu Priyadarshni Ojha</h1>
+            <img src="my_image.jpg" alt="my_image" class="imgSize">
+            <p class="h1">Welcome to my page...</p>
+        </main>
+
+    </body>
+    
+    <footer class="footer">&copy; 2024 Madhu's Portfolio. All rights reserved.
+        <button id="scrollToTopBtn" onClick="document.getElementById('navigation').scrollIntoView({ behavior: 'smooth'});" class="scrolltop">☝️</button>
+    </footer>
+
+</html>
