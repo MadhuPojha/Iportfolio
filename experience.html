@@ -1,0 +1,87 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <title>My-Portfolio</title>
+        <link type="text/css" rel="stylesheet" href="index.css">
+        <script src="index.js"></script>
+    </head>
+    
+    <body class="container">
+        <header class="body">
+            <ul class="ul" id="navigation">
+                <li class="li">
+                    
+                    
+                    <a href="about.html" class="a"> About </a>
+                    <a href="skills.html" class="a"> Skills </a>
+                    <a href="experience.html" class="a"> Experience </a>
+                    <a href="edu_skills.html" class="a"> Education </a>
+                    <a href="projects.html" class="a"> Projects </a>
+                    <a href="contact.html" class="a"> Contact </a>
+                    
+                    <!-- <a href="#" class="a"> Skill </a>                     
+                    <a href="#" class="a"> Resume </a> -->
+                </li>
+            </ul>
+        </header>
+        <button id="darkmode" onClick="toggleDarkMode()" style="text-align: right; float: right;">Dark-mode</button>         
+        
+            
+            <script>
+                function toggleDarkMode() {
+                    document.body.classList.toggle('dark-mode');
+                    // Send an AJAX request to update the server-side session
+                    fetch("/toggle_dark_mode", {
+                        method: "POST",
+                        credentials: "include", // Include cookies in the request
+                    });
+                }
+            </script>
+        
+        <main class="main main--about">
+
+            <h3 class="h1" style="font-size: 18;">My experiences: </h3>
+            <ul style="font-size: 18; color: rgb(103, 40, 80);">
+                  <p class="h1">I have 2.5 years of experience as java developer and 3 years experience as a computer teacher.</p>
+                <li>
+                    <strong>Computer Trainee/ NGO /Bangalore,India(2015-2017): </strong> 
+                    Almost 1.5 years experience in Computer Literacy Program. 
+                    Teaching basics of computer in rural areas and economically backward people. 
+                    As computer litercacy program we were responsible to train and teach youth and children who couldnot 
+                    educate themseleves as they were not able pay the course fee. 
+                </li>
+                <br>
+                <li>
+                    <strong>Computer Teacher/Little Flower School/Bangalore,India(2012-2014): </strong> 
+                    2 years experience as a computer teacher for class 6-10. Teaching basics of computer,  
+                    latest computer skill and basics of programming language like html, javascript, sql.  
+                    Provide support to student to use of technology and always encourage and appreciate student  
+                    for their work. Monitor and access student progress.
+                </li>
+                <br>
+                <li>
+                    <strong>Java developer/Fusion Software & Sys. Pvt. Ltd./Mumbai,India(2009-2011): </strong>  
+                    2 years experience as a software developer unsing Java and sql.  
+                    Responsible to develop user interfaces, resolve technical issues,   
+                    generate pdf report, creating daily status report , maintain project document and reviewed and  
+                    test existing code to discover and fix bugs.  
+                    IT Tools: Java, JavaScript, sql, EXTJS, iReport, Adobe life cycle designer. 
+                </li>
+                <br>
+                <br>
+                <br>
+               
+            </ul>
+            
+        </main>
+        <button id="scrollToTopBtn" onClick="document.getElementById('navigation').scrollIntoView({ behavior: 'smooth'});" class="scrolltop">☝️</button>         
+        
+
+    </body>
+    
+    <footer class="footer">&copy; 2024 Madhu's Portfolio. All rights reserved.
+        <button id="scrollToTopBtn" onClick="document.getElementById('navigation').scrollIntoView({ behavior: 'smooth'});" class="scrolltop">☝️</button>
+    </footer>
+
+</html>
