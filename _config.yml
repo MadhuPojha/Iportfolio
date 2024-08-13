@@ -1,6 +1,6 @@
 title: My Portfolio
 description: This is my personal portfolio site.
 baseurl: "https://madhupojha.github.io/Iportfolio.io/home.html" # The subpath of your site, e.g., /Iportfolio
-url: "https://madhupojha.github.io" # Your GitHub Pages URL
+url: "https://madhupojha.github.io/Iportfolio.io/home.html" # Your GitHub Pages URL
 theme: jekyll-theme-minimal # The Jekyll theme you are using
 github_username: madhupojha
